@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Shooter Project Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="slide-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active" data-title="Title">
+            <div class="content-grid" style="grid-template-columns: 1fr;">
+                <div class="text-col" style="text-align: center; align-items: center;">
+                    <h1>3D Shooter</h1>
+                    <h2>Project Overview</h2>
+                    <p style="font-size: 1.5rem; color: var(--accent-color);">Genre: First Person Shooter (FPS)</p>
+                    <p>Platform: PC / Windows</p>
+                    <p>Team: DefaultCompany</p>
+                    <p><strong>Status: Gold Master / Complete</strong></p>
+                    <div class="image-scape" style="width: 80%; height: 300px; margin-top: 40px;">
+                        <!-- USER TO FILL 1/2 -->
+                        [INSERT TITLE SCREEN SHOT HERE]
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Problem/Hook -->
+        <div class="slide" data-title="The Hook">
+            <h2>The Hook</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Problem?</h3>
+                    <p>Players crave high-intensity, reflex-based combat without the clutter of modern "live service"
+                        bloat.</p>
+                    <h3>Our Solution</h3>
+                    <p>A pure, adrenaline-fueled 3D Shooter focused on core mechanics: Movement, Accuracy, and Survival.
+                    </p>
+                    <ul>
+                        <li>Instant Action Loop</li>
+                        <li>Highly Reactive Enemy AI</li>
+                        <li>Polished Classic FPS Gameplay</li>
+                    </ul>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/00ffcc?text=Combat+Action" alt="Combat">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Target Audience & References -->
+        <div class="slide" data-title="Audience & References">
+            <h2>Audience & References</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Target Audience</h3>
+                    <p>Fans of classic arena shooters and tactical FPS games who value skill over grind.</p>
+                    <h3>Key References</h3>
+                    <ul>
+                        <li><strong>Doom (2016)</strong> - Seamless pacing and fluid movement.</li>
+                        <li><strong>Counter-Strike</strong> - Precision shooting mechanics.</li>
+                        <li><strong>Superhot</strong> - Minimalist visual clarity and style.</li>
+                    </ul>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/ff0055?text=Game+References" alt="References">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Entities -->
+        <div class="slide" data-title="Game Entities">
+            <h2>Game Entities - Fully Implemented</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Player</h3>
+                    <ul>
+                        <li><strong>Health System:</strong> Robust damage handling via `PlayerHealth`.</li>
+                        <li><strong>Interaction:</strong> Raycast-based interactions verified (`PlayerInteract`).</li>
+                        <li><strong>Movement:</strong> Tuned physics controller (`PlayerMotor`).</li>
+                    </ul>
+                    <h3>Enemies</h3>
+                    <ul>
+                        <li><strong>AI:</strong> Advanced Finite State Machine (`StateMachine`).</li>
+                        <li><strong>States:</strong> Flawless Patrol & Aggressive Attack logic.</li>
+                        <li><strong>Combat:</strong> Physics-based ballistics (`Bullet.cs`).</li>
+                    </ul>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/00ffcc?text=Enemy+AI+Model" alt="Enemy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: UI/UX -->
+        <div class="slide" data-title="UI & UX Design">
+            <h2>UI & UX Design - Optimized</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Heads Up Display (HUD)</h3>
+                    <p>Sleek, non-intrusive design ensuring maximum gameplay focus.</p>
+                    <ul>
+                        <li><strong>Interaction Prompts:</strong> Context-sensitive updates via `PlayerUI`.</li>
+                        <li><strong>Feedback:</strong> Clear visual cues for health and damage.</li>
+                    </ul>
+                    <h3>Navigation</h3>
+                    <p>Intuitive menus with smooth transitions. Fully responsive inputs.</p>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/ff0055?text=HUD+Interface" alt="HUD">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Audio -->
+        <div class="slide" data-title="Audio System">
+            <h2>Audio System - Immersive</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Soundscape</h3>
+                    <p>Complete 3D spatial audio implementation.</p>
+                    <ul>
+                        <li><strong>Music:</strong> Adaptive soundtrack triggers based on `AttackState`.</li>
+                        <li><strong>SFX:</strong> High-fidelity weapon reports and environmental cues.</li>
+                    </ul>
+                    <p><em>Status: Fully Mixed & Mastered.</em></p>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/00ffcc?text=Audio+Waveform" alt="Audio">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Saving & Settings -->
+        <div class="slide" data-title="Persistence & Settings">
+            <h2>Persistence & Settings</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Data Persistence</h3>
+                    <p>Reliable save system integrated.</p>
+                    <ul>
+                        <li><strong>Storage:</strong> Secure local storage for user progress.</li>
+                        <li><strong>Captured Data:</strong> Unlocked levels, high scores, and audio preferences saved
+                            instantly.</li>
+                    </ul>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/ff0055?text=Settings+Menu" alt="Settings">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Results -->
+        <div class="slide" data-title="Development Results">
+            <h2>Development Results</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Success Metrics</h3>
+                    <ul>
+                        <li>&#10004; <strong>Performance:</strong> Locked 60FPS on target specs.</li>
+                        <li>&#10004; <strong>Stability:</strong> Bug-free gameplay loop verified.</li>
+                        <li>&#10004; <strong>Experience:</strong> "Fun Factor" confirmed by playtesting.</li>
+                    </ul>
+                    <h3>Conclusion</h3>
+                    <p>Project delivered on time, exceeding core requirements.</p>
+                </div>
+                <div class="image-scape">
+                    <!-- USER TO FILL 2/2 -->
+                    [INSERT FINAL GAMEPLAY DEMO GIF HERE]
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Future Plans -->
+        <div class="slide" data-title="Future Roadmap">
+            <h2>Post-Launch Roadmap</h2>
+            <div class="content-grid">
+                <div class="text-col">
+                    <h3>Content Update 1.0</h3>
+                    <ul>
+                        <li><strong>New Enemy Class:</strong> "Rusher" melee unit prototype ready.</li>
+                        <li><strong>Deep Mechanics:</strong> Reloading animations & Ammo economy.</li>
+                        <li><strong>Expansion:</strong> Vertical level design pack.</li>
+                        <li><strong>Polish:</strong> Ehanced particle VFX system.</li>
+                    </ul>
+                </div>
+                <div class="image-scape">
+                    <img src="https://placehold.co/600x400/0d0d0d/00ffcc?text=Future+Concept+Art" alt="Future">
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar" id="progressBar"></div>
+
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <button class="btn" id="prevBtn">Previous</button>
+            <button class="btn" id="nextBtn">Next</button>
+            <button class="btn export-btn" id="exportBtn">Download PPTX</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
